@@ -88,7 +88,7 @@ input:hover{width:400px}
 
 #res_box{background-color: red; width:150px; height:100px; margin: auto; margin-top: -250px;  border-bottom-left-radius: 50px; border-bottom-right-radius:50px}
 
-
+#res_box>p{cursor: pointer; margin: 20px; color: white; font-size: 20px;}
     </style>
 </head>
 <body>
@@ -164,12 +164,12 @@ function tongue(){
 }
 
 
-name=document.getElementById('name').value
+
 
 
 async function receipeName(resceipe_name){
 
-
+    name=document.getElementById('name').value
 
 
 try{
@@ -179,6 +179,7 @@ try{
  
  data= await response.json()
 
+ appendreceipe(data.meals)
  console.log(data.meals)
 }
 
@@ -201,9 +202,17 @@ recipie_box.innerHTML=null
 
 receipe_arr.forEach(resp => {
 
+p=document.createElement('p')
 
+p.innerHTML=resp.strMeal
+recipie_box.append(p)
 
+p.onclick= () =>{
+   singleprod(res)
+   
     
+}
+
 });
 
 
@@ -212,7 +221,11 @@ receipe_arr.forEach(resp => {
 
 
 
+function singleprod(prod){
+    localStorage.setItem('s_p',JSON.stringify)
 
+    window.location.href='singleprod.html'
+}
 
 
  
