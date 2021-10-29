@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+
+        body{background-color: rgb(29, 27, 27);}
+        #box{width:800px; border:1px solid white ;  margin: auto; text-align: center;  padding-top: 100px; padding-bottom: 20px; padding-left: 20px;padding-right: 20px;  ; color: white; text-align: justify;}
+        #box>img{width:800px; height: 350px;}
+    </style>
+</head>
+<body>
+
+    <div id='navbar'></div>
+
+
+
+    <div id='box'>
+
+
+  
+
+
+    </div>
+
+
+
+
+
+
+
+    
+</body>
+
+
+</html>
+<script type="module">
+
+import navbar from "./components/navbar.js";
+
+
+
+var nav= document.getElementById('navbar');
+
+nav.innerHTML=navbar()
+
+import {getData,append} from "./scripts/showData.js";
+
+
+
+
+
+let cont=document.getElementById('box')
+
+let meal =JSON.parse(localStorage.getItem('s_p'))
+
+
+
+meal=[meal]
+
+console.log(meal)
+
+append(meal,cont)
+
+
+      
+
+</script>

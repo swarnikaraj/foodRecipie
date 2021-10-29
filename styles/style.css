@@ -1,0 +1,55 @@
+#logo{color:white ; font-size: 30px !important; font-family: 'Pacifico', cursive !important; ;background-color: rgb(179, 46, 46)!important}
+#navbar{display: flex; position: fixed; top:0;left:0;right: 0; width: 100%; background-color: rgb(179, 46, 46); text-align: center; color: cadetblue; }
+
+#navbar >a{margin: auto; font-family: 'Asap', sans-serif;
+}
+#navbar >a{padding:10px}
+
+
+#navbar >a{background-color: rgb(36, 35, 34); border-radius: 20px; cursor: pointer; text-decoration: none; color: white;}
+
+#headin{ font-family: 'Festive', cursive; color:cadetblue; ; font-size: 40px; color: black;  }
+
+
+
+
+#bg{
+
+
+  background-image: url('https://media.giphy.com/media/3o6Ztq1YD8lONQGdck/giphy.gif'); 
+
+  
+
+  margin-top: 150px;
+ 
+ background-size: cover;
+
+  background-repeat: no-repeat;
+
+  width: 650px ;
+  height: 650px;
+
+  margin: auto;
+
+  border-radius: 50%;
+  
+ 
+ 
+
+}
+
+
+
+
+input{padding:10px 50px;background-color: cadetblue; margin-left: -10px; margin-top: 30px; border-radius: 50px;}
+#search_div{background-color:rgb(179, 46, 46,0.6) ; width:500px; height: 500px;margin: auto; border-radius: 50%; border:4px solid rgb(255, 190, 24); text-align: center; margin-top: 100px;}
+
+#search_div > div >div{width:50px ;height:50px; background-color: cadetblue; margin:40px; border-radius: 50%; border:4px solid black}
+
+#search_div > div{display: flex; margin-left: 100px; margin-top: 50px; }
+
+input:hover{width:400px}
+
+#res_box{background-color: red; width:150px; height:100px; margin: auto; margin-top: -250px;  border-bottom-left-radius: 50px; border-bottom-right-radius:50px}
+
+#res_box>p{cursor: pointer; margin: 20px; color: white; font-size: 20px;}
